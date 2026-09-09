@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova-Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/register.js" defer></script>
+</head>
+
+<body>
+
+<main>
+    <form id="register-form">
+
+        <h1 class="register-form__title">User Register</h1>
+
+        <div class="register-form__field">
+            <label for="username" class="register-form__label">Username</label>
+            <input type="text" id="username" class="register-form__input" name="username" placeholder="volcano3503">
+            <span id="username-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label for="email" class="register-form__label">Email</label>
+            <input type="email" id="email" class="register-form__input" name="email" placeholder="example@gmail.com">
+            <span id="email-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label for="password" class="register-form__label">Password</label>
+            <input type="password" id="password" class="register-form__input" name="password">
+            <span id="password-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label for="confirm-password" class="register-form__label">Confirm password</label>
+            <input type="password" id="confirm-password" class="register-form__input" name="confirm-password">
+            <span id="confirm-password-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label for="cell-phone" class="register-form__label">Cell phone</label>
+            <input type="tel" id="cell-phone" class="register-form__input" name="cell-phone" placeholder="999-543-566">
+            <span id="cell-phone-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label for="reference-code" class="register-form__label">Reference code</label>
+            <input type="text" id="reference-code" class="register-form__input" name="reference-code" placeholder="NOVA-2026">
+            <span id="reference-code-error" class="register-form__error"></span>
+        </div>
+
+        <div class="register-form__field">
+            <label class="register-form__label">
+                <input type="checkbox" id="age-checkbox" class="register-form__checkbox" name="over-18">
+                I am over 18 years old
+            </label>
+            <span id="age-error" class="register-form__error"></span>
+        </div>
+
+        <button type="submit" id="submit-buttom" class="register-form__button">
+            Register
+        </button>
+
+    </form>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-top">
+        <img class="footer-logo__img" src="../images/logo/Nova-Games-logo.png" alt="">
+    </div>
+
+    <div class="footer-media">
+        <nav class="footer-nav__bar">
+            <ul class="footer-nav__list">
+                <li class="footer-list__element"><a href="#">help and feedback</a></li>
+                <li class="footer-list__element"><a href="#">terms of use</a></li>
+                <li class="footer-list__element"><a href="#">privacy and cookies</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer-bottom">
+        <p>all rights reserved to @anonymous - 2026</p>
+    </div>
+</footer>
+
+</body>
+</html>

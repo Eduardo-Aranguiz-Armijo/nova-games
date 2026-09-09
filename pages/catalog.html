@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Products</title>
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-header">
+            <div class="header-logo__content">
+                <a href="../pages/home.html">
+                    <img src="../images/logo/Nova-Games-logo-removebg-preview.png" class="header-img__logo" alt="Nova Games logo">
+                </a>
+                <h1 class="header-title__logo">Nova entertainment</h1>
+            </div>
+
+            <nav class="header-left__bar">
+                <ul class="header-list__bar">
+                    <li class="header-list__element"><a href="../pages/home.html">home</a></li>
+                    <li class="header-list__element"><a href="../pages/catalog.html">products</a></li>
+                    <li class="header-list__element"><a href="../pages/community.html">community</a></li>
+                    <li class="header-list__element"><a href="../pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-top__right">
+                <nav class="header-right__nav">
+                    <ul class="header-list__bar">
+                        <li class="header-list__element"><a href="../pages/register.html">register</a></li>
+                        <li class="header-list__element"><a href="../pages/login.html">sign in</a></li>
+                    </ul>
+                </nav>
+
+                <a href="../pages/cart.html" class="header-cart">
+                    <img src="../images/icons/cart.png" class="header-cart__img" alt="Shopping cart">
+                </a>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <form class="search-form">
+                <label for="product-search" class="search-form__label">Search games</label>
+                <div class="search-form__content">
+                    <input type="search" id="product-search" name="product-search" class="search-form__input" placeholder="Search for a game...">
+                    <button type="submit" class="search-form__button">Search</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main class="products-main">
+        <section class="products-header">
+            <h2 class="products-header__title">Game Store</h2>
+            <p class="products-header__description">Discover games, new releases and popular titles.</p>
+        </section>
+
+        <div class="products-layout">
+            <aside class="filters">
+                <div class="filters__header">
+                    <h2 class="filters__title">Filters</h2>
+                </div>
+
+                <form class="filters-form">
+
+                    <fieldset class="filters-group">
+                        <legend class="filters-group__title">Category</legend>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="action">
+                            Action
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="adventure">
+                            Adventure
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="rpg">
+                            RPG
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="strategy">
+                            Strategy
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="simulation">
+                            Simulation
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="category" value="racing">
+                            Racing
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-group">
+                        <legend class="filters-group__title">Platform</legend>
+                        <label class="filters-option">
+                            <input type="checkbox" name="platform" value="pc">
+                            PC
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="platform" value="playstation">
+                            PlayStation
+                        </label>
+                        <label class="filters-option">
+                            <input type="checkbox" name="platform" value="xbox">
+                            Xbox
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-group">
+                        <legend class="filters-group__title">Price</legend>
+                        <label class="filters-option">
+                            <input type="radio" name="price" value="low">
+                            Under $20.000
+                        </label>
+                        <label class="filters-option">
+                            <input type="radio" name="price" value="medium">
+                            $20.000 - $40.000
+                        </label>
+                        <label class="filters-option">
+                            <input type="radio" name="price" value="high">
+                            Over $40.000
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-group">
+                        <legend class="filters-group__title">Availability</legend>
+                        <label class="filters-option">
+                            <input type="checkbox" name="availability" value="available">
+                            Available
+                        </label>
+                    </fieldset>
+
+                    <div class="filters-group">
+                        <label for="sort-products" class="filters-group__title">Sort by</label>
+                        <select id="sort-products" name="sort-products" class="filters-group__select">
+                            <option value="relevance">Relevance</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+
+                    <button type="reset" class="filters-form__reset">Clear filters</button>
+                </form>
+            </aside>
+
+            <section class="catalog">
+                <div class="catalog-header">
+                    <h2 class="catalog-header__title">All Games</h2>
+                    <p class="catalog-header__results">6 games available</p>
+                </div>
+
+                <div class="catalog-grid">
+
+                    <article class="product-card" data-name="Shadow Realm" data-category="adventure" data-platform="pc playstation xbox" data-price="29990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/game-image(1).png" alt="Shadow Realm">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">Adventure</p>
+                                <h3 class="product-card__title">Shadow Realm</h3>
+                                <p class="product-card__price">$29.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                    <article class="product-card" data-name="Velocity X" data-category="racing" data-platform="pc playstation" data-price="24990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/HYnDUL.png" alt="Velocity X">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">Racing</p>
+                                <h3 class="product-card__title">Velocity X</h3>
+                                <p class="product-card__price">$24.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                    <article class="product-card" data-name="Frontline Zero" data-category="action" data-platform="pc xbox" data-price="34990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/772415.png" alt="Frontline Zero">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">Action</p>
+                                <h3 class="product-card__title">Frontline Zero</h3>
+                                <p class="product-card__price">$34.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                    <article class="product-card" data-name="Tactical War" data-category="strategy" data-platform="pc" data-price="39990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/battlefield-background-r8xd4dc7f4a327ii.png" alt="Tactical War">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">Strategy</p>
+                                <h3 class="product-card__title">Tactical War</h3>
+                                <p class="product-card__price">$39.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                    <article class="product-card" data-name="Crimson Age" data-category="rpg" data-platform="playstation xbox" data-price="44990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/kliff-from-crimson-desert-over-a-black-and-red-background.png" alt="Crimson Age">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">RPG</p>
+                                <h3 class="product-card__title">Crimson Age</h3>
+                                <p class="product-card__price">$44.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                    <article class="product-card" data-name="Battle Horizon" data-category="action" data-platform="pc playstation" data-price="31990" data-available="true">
+                        <a href="../pages/product-detail.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="../images/game/tomb_raider_by_byju84_dc28mxm-pre.png" alt="Battle Horizon">
+                            </div>
+                            <div class="product-card__info">
+                                <p class="product-card__category">Action</p>
+                                <h3 class="product-card__title">Battle Horizon</h3>
+                                <p class="product-card__price">$31.990</p>
+                            </div>
+                        </a>
+                        <button type="button" class="product-card__button">Add to cart</button>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <img class="footer-logo__img" src="../images/logo/Nova-Games-logo.png" alt="Nova Games logo">
+        </div>
+
+        <div class="footer-media">
+            <ul class="footer-media__list">
+                <li><a href="#">help and feedback</a></li>
+                <li><a href="#">terms of use</a></li>
+                <li><a href="#">privacy and cookies</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>all rights reserved to @anonymous - 2026</p>
+        </div>
+    </footer>
+
+    <script src="../js/catalog.js"></script>
+</body>
+</html>

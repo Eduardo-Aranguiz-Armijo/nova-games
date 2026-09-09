@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova-login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+
+<main>
+
+    <form id="login-form">
+        <div class="login-form__info">
+            <h1 class="login-form__title">User login</h1>
+            <p class="login-form__description">enter your credentials to continue in your account</p>
+        </div>
+        
+        <div class="login-form__field">
+            <label for="email" class="login-form__label">Email</label>
+            <input type="email" id="email" class="login-form__input" name="email">
+            <span id="email-error" class="login-form__error"></span>
+        </div>
+      
+        <div class="login-form__field">
+            <label for="password" class="login-form__label">Password</label>
+            <input type="password" id="password" class="login-form__input" name="password">
+            <span id="password-error" class="login-form__error"></span>
+        </div>
+
+       
+            <button type="submit" id="submit-buttom" class="login-form__button">Login</button>
+            <p class="login-form__register-link">You don't have account?, <a href="../pages/register.html"> register here</a></p>
+    </form>
+
+</main>
+   <footer class="main-footer">
+        <div class="footer-top">
+            <img class="footer-logo__img" src="../images/logo/Nova-Games-logo.png" alt="">
+        </div>
+        <div class="footer-media">
+            <nav class="footer-nav__bar">
+                <ul class="footer-nav__list">
+                    <li class="footer-list__element"><a href="#">help and feedback</a></li>
+                    <li class="footer-list__element"><a href="#">terms of use</a></li>
+                    <li class="footer-list__element"><a href="#">privacity and cookies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+                <p>all rights reserved to @anonimous - 2026</p>
+        </div>
+   </footer>
+</body>
+</html>
